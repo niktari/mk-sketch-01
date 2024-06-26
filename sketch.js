@@ -40,7 +40,7 @@ function draw() {
   blendMode(EXCLUSION);
   tint('white')
   drawModelLayer();
-  image(modelLayer, 50, 75);
+  image(modelLayer, 25, 75);
   pop();
 
 
@@ -50,7 +50,7 @@ function drawModelLayer() {
     modelLayer.clear();
   
     modelLayer.push();
-    modelLayer.scale(3);
+    modelLayer.scale(2.5);
     modelLayer.rotateZ(frameCount * 0.0005);
     modelLayer.rotateX(frameCount * 0.0005);
     modelLayer.rotateY(frameCount * 0.0005);
